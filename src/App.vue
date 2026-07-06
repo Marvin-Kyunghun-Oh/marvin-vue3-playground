@@ -1,30 +1,11 @@
 <template>
   <div>
-    <button v-on:click="increment">Counter : {{ counter }}</button>
+
   </div>
 </template>
 
-<script>
-import { onMounted, ref } from 'vue'
+<script setup>
 
-export default {
-  setup () {
-    const counter = ref(0)
-
-    const increment = () => {
-      counter.value++
-    }
-
-    onMounted(() => {
-      console.log('App mounted')
-    });
-
-    return {
-      counter,
-      increment,
-    }
-  }
-}
 </script>
 
 <style lang="scss" scoped>
